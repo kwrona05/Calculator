@@ -4,11 +4,15 @@ def dodawanie(num1, num2):
 def odejmowanie(num1, num2):
   return num1 - num2
 
+def mnozenie(num1, num2):
+  return num1 * num2
+
 print("Wybierz operacje liczbowa:")
 print("1.Dodawanie")
 print("2.Odejmowanie")
+print("3.mnozenie")
 
-choice = input("Którą operacje chcesz wykonać? Wybierz (1/2): ")
+choice = input("Którą operacje chcesz wykonać? Wybierz (1/2/3): ")
 
 num1 = float(input("Podaj pierwszą wartość: "))
 num2 = float(input("Podaj drugą wartość: "))
@@ -16,9 +20,12 @@ num2 = float(input("Podaj drugą wartość: "))
 if choice == '1':
   print(num1,"+", num2,"=", dodawanie(num1, num2))
 elif choice == '2':
-  print(num1,"-"), num2, "=", odejmowanie(num1, num2)
+  print(num1,"-", num2, "=", odejmowanie(num1, num2))
+elif choice == '3':
+  print(num1,"*",num2,"=", mnozenie(num1, num2))
 else:
   print("niepoprawna wartość")
 
 dodawanie(num1, num2)
 odejmowanie(num1, num2)
+mnozenie(num1, num2)
