@@ -7,12 +7,16 @@ def odejmowanie(num1, num2):
 def mnozenie(num1, num2):
   return num1 * num2
 
+def dzielenie(num1, num2):
+  return num1  / num2
+
 print("Wybierz operacje liczbowa:")
 print("1.Dodawanie")
 print("2.Odejmowanie")
 print("3.mnozenie")
+print("4.dzielenie")
 
-choice = input("Którą operacje chcesz wykonać? Wybierz (1/2/3): ")
+choice = input("Którą operacje chcesz wykonać? Wybierz (1/2/3/4): ")
 
 num1 = float(input("Podaj pierwszą wartość: "))
 num2 = float(input("Podaj drugą wartość: "))
@@ -23,9 +27,12 @@ elif choice == '2':
   print(num1,"-", num2, "=", odejmowanie(num1, num2))
 elif choice == '3':
   print(num1,"*",num2,"=", mnozenie(num1, num2))
+elif choice == '4':
+  print(num1,"/",num2,"=", dzielenie(num1, num2))
 else:
   print("niepoprawna wartość")
 
 dodawanie(num1, num2)
 odejmowanie(num1, num2)
 mnozenie(num1, num2)
+dzielenie(num1, num2)
